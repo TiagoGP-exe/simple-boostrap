@@ -1,0 +1,60 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container-image {
+  position: relative;
+}
+
+.container-image div {
+  position: absolute;
+  bottom: 0px;
+  padding: 24px 0;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.7);
+  max-height: 100%;
+  max-width: calc(100% - 32px);
+}
+
+.fireIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.maxHeight {
+  max-height: 80px;
+}
+
+.gray {
+  background-color: #ececec;
+}
+
+.spacing {
+  padding: 1rem 1rem 0 1rem;
+  gap: 1rem;
+}
+.spacing p {
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.spacing p:hover {
+  color: #f7931e;
+}
+
+.max-content {
+  max-width: 1280px;
+}
+
+.calendarContent p {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.calendarContent img {
+  height: 1.2rem;
+  width: 1.2rem;
+}
+
+.bgOrange {
+  background-color: #f7931e;
+}
