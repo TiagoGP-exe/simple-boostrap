@@ -11,59 +11,182 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="cba/styles.css" />
-    <link rel="icon" href="cba/assets/favicon.svg" type="image/x-svg" />	
+
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/favicon.svg" type="image/x-svg" />
   </head>
   <body>
-    <div class="">
-      <header class="d-flex justify-content-center align-items-center	my-3">
-        <div class="d-flex justify-content-between align-items-center w-100 max-content">
-					<img src="cba/assets/logo.svg" alt="Logo" class="maxHeight"  />
 
-        <div class="d-flex justify-content-between  w-75">
-          <div class="d-flex gray justify-content-between align-content-center w-100">
-            <div class="d-flex spacing">
-							<p>Quem somos</p>
-            |
-            <p>Expediente</p>
-            |
-            <p>Anuncie</p>
-            |
-            <p>Fale Conosco</p>
-
-						</div>
-						<div class=" d-flex calendarContent align-items-center ">
-							<img src="cba/assets/calendar.svg" alt="Calendário">
-							<p>03 março de 2022	</p>
-						</div>	
+    <div class="d-flex flex-column align-items-center">
+      <header class="d-flex justify-content-center align-items-center my-3 w-100">
+        <div
+          class="d-flex justify-content-between align-items-center w-100 max-content"
+        >
+          <img src="assets/logo.svg" alt="Logo" class="maxHeight" />
+  
+          <div class="d-flex justify-content-between w-75">
+            <div
+              class="d-flex gray justify-content-between align-content-center w-100"
+            >
+              <div class="d-flex spacing">
+                <p>Quem somos</p>
+                |
+                <p>Expediente</p>
+                |
+                <p>Anuncie</p>
+                |
+                <p>Fale Conosco</p>
+              </div>
+              <div class="d-flex calendarContent align-items-center">
+                <img src="assets/calendar.svg" alt="Calendário" />
+                <p class="calendarDate"></p>
+              </div>
+            </div>
           </div>
-
-				
         </div>
-				</div>
       </header>
-			<div>
-				<div class="d-flex bgOrange text-white justify-content-center">
-         <div class="d-flex justify-content-between align-content-center w-100 max-content">
-					<div class="d-flex justify-content-between align-content-center w-100">
-            <div class="d-flex spacing">
-							<p>Editorias</p>    
-							<p>Vídeos</p>      
-							<p>Olhar Agro & Negócios</p>   
-							<p>Olhar Conceito</p>
-							<p>Olhar Jurídico</p>
-						</div>
-						<div class=" d-flex calendarContent align-items-center bg-danger ">
-							<img src="cba/assets/search.svg" alt="Pesquisa">
+  
+      <div class="d-flex bgOrange text-white justify-content-center w-100">
+        <div
+          class="d-flex justify-content-between align-content-center w-100 max-content"
+        >
+          <div class="d-flex navSpacing">
+            <p>Editorias</p>
+            <p>Vídeos</p>
+            <p>Olhar Agro & Negócios</p>
+            <p>Olhar Conceito</p>
+            <p>Olhar Jurídico</p>
           </div>
-				 </div>
-			</div>
-		</div>
+          <div class="d-flex searchContent align-items-center">
+            <img src="assets/search.svg" alt="Pesquisa" />
+          </div>
+        </div>
+      </div>
+  
+      <main
+        class="d-flex flex-column max-content flex-xl-row justify-content-center align-items-center align-items-xl-start mt-5 pt-5 max"
+      >
+        <div class="  d-flex flex-column justify-content-center  align-items-center ">
+          <div class="mainPhoto"  >
+            <div>
+              <h3>Aditivo contratual</h3>
+              <h4>
+                Após aprovar auxílio-transporte, Câmara de Cuiabá prorroga
+                contrato de fornecimento de combustível
+              </h4>
+            </div>
+            <img
+              src="https://www.olhardireto.com.br/imgsite/capa/camara-cuiaba(105).jpg"
+              alt="camara Cuiabá"
+            />
+          </div>
+  
+          <div class="contentBottom d-flex">
+            <div>
+              <p>CRIMES COM USO DA INTERNET</p>
+              <h5>Polícia Civil recupera mais de R$ 43 mil roubados de vítimas em golpes</h5>
+              <img src="https://www.olhardireto.com.br/imgsite/capa/ns2q2n1175006616-Policia-Civil-PJC-Novas-(1)(12)(17).jpeg" alt="aaa">
+            </div>
+  
+            <div>
+              <p>NA MADRUGADA</p>
+              <h5>Blitz da Lei Seca prende 16 motoristas por embriaguez ao volante em Cuiabá</h5>
+              <img src="https://www.olhardireto.com.br/imgsite/capa/ns2q2n2175006576-WhatsApp-Image-2022-03-05-at-10.03.53.jpeg" alt="aaa">
+            </div>
+          
+          </div>
+        </div>
+        <div class="">
+          <header class="d-flex align-items-center bgOrange hotHeader text-white">
+            <img src="assets/fire.svg" alt="fogo" />
+            <p class="d-flex h-100 align-items-md-center">PICANTES</p>
+          </header>
+  
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+  
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+          <div class="d-flex flex-column hotContent">
+            <h5>Fim do home office</h5>
+            <p>
+              Ouvidoria municipal retoma atendimentos presenciais em todas as
+              unidades
+            </p>
+          </div>
+        </div>
+      </main>
+
+    </div>
+   
+
+    <script>
+      const date = new Date();
+      const options = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+      };
+      const correctDate = new Intl.DateTimeFormat("pt-BR", options).format(
+        date
+      );
+
+      const calendar = document.querySelector(".calendarDate");
+
+      calendar.innerHTML = correctDate;
+    </script>
   </body>
 </html>
