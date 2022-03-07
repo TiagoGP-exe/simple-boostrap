@@ -225,5 +225,49 @@
 }
 
 .contentBottom {
-  width: 90%;
+  width: 93%;
+}
+
+.contentAside {
+  max-width: 300px;
+}
+.contentAside p {
+  color: #f7931e;
+  font-weight: 600;
+}
+
+.contentAside img {
+  max-width: 250px;
+}
+
+.contentThumb {
+  max-width: 90%;
+}
+
+.contentThumb > div {
+  cursor: pointer;
+  width: 100%;
+}
+
+.contentThumb > div > div {
+  gap: 0.5rem;
+}
+
+.contentThumb > div > p {
+  color: #f7931e;
+  font-weight: 600;
+}
+
+.contentThumb > div > div > p {
+  font-size: 0.85rem;
+}
+
+.contentThumb > div:hover > div > p {
+  color: #f7931e;
+}
+
+.contentThumb div img {
+  width: 100px;
+  height: 100px;
+  border-radius: 0.25rem;
 }
