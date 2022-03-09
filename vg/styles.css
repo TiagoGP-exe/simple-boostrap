@@ -2,12 +2,29 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* .container {
-    width: 1230px;
-} */
+.container {
+  max-width: 1230px;
+}
 
-@media screen and (min-width: 1260px) {
+.coins {
+  font-size: 0.8rem;
+}
+
+.coins b {
+  color: rgb(255, 50, 50);
+}
+
+.sizeImage img {
+  width: 120px;
+  height: 80px;
+}
+
+.sizeImage p {
+  font-size: 0.8rem;
+}
+
+/* @media screen and (min-width: 1260px) {
   .container {
     width: 1230px;
   }
-}
+} */
