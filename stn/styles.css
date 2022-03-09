@@ -81,12 +81,17 @@
 }
 
 .navSpacing {
-  height: 100%;
+  height: 90%;
+  gap: 1rem;
+}
+
+.navSpacingLittle {
+  height: 90%;
   gap: 1rem;
 }
 
 .navSpacing p {
-  height: 100%;
+  height: 90%;
   font-size: 1rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
