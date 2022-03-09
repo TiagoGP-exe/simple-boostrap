@@ -244,6 +244,10 @@
   max-width: 90%;
 }
 
+.container {
+  max-width: 1280px;
+}
+
 .contentThumb > div {
   cursor: pointer;
   width: 100%;
@@ -270,4 +274,49 @@
   width: 100px;
   height: 100px;
   border-radius: 0.25rem;
+}
+
+.max-content-max {
+  max-width: 100%;
+}
+
+.navBarHeight {
+  min-height: 60px;
+}
+
+.customButtom {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .hiddenItem {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  .customButtom {
+    display: block;
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    width: 28px;
+    opacity: 0.6;
+  }
+
+  .hiddenItem div {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .hiddenItem p {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .hiddenItem img {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
