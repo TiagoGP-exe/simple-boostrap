@@ -183,6 +183,30 @@
   box-shadow: 1px 1px 5px rgba(124, 124, 124, 0.5);
 }
 
+.bodyIcon {
+  position: fixed;
+  right: 15px;
+  top: 46vh;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.handIcon {
+  position: fixed;
+  right: 0;
+  top: 28vh;
+  width: 36px;
+  height: 36px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.bodyIcon:hover,
+.handIcon:hover {
+  transform: scale(1.1);
+}
+
 .hotContent {
   width: 100%;
   cursor: pointer;
