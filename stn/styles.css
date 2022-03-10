@@ -41,15 +41,24 @@
   padding: 0.2rem 1rem;
 }
 
-
 .HighlightTrue {
   opacity: 1;
   background-size: 100% 100%;
   background-position: 0% 0%;
 }
 
+.topImg {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .max-content {
   max-width: 1280px;
+}
+
+.max-lg-content {
+  max-width: 1024px;
 }
 
 .calendarContent {
@@ -76,6 +85,15 @@
   opacity: 1;
 }
 
+.hover-shadow {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.hover-shadow:hover {
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+
 .bgGreen {
   background-color: #007004;
 }
@@ -96,19 +114,16 @@
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   padding: 1rem;
- 
- 
-  
 }
 
 .navSpacing p:hover {
   background-size: 100% 100%;
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .mainPhoto {
   width: 90%;
-  background-color: #DC3545;
+  background-color: #dc3545;
   position: relative;
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   border-radius: 1rem;
@@ -127,8 +142,6 @@
   background: linear-gradient(180deg, transparent 0%, #000 100%);
 }
 
-
-
 .mainPhoto:hover div h3 {
   background-size: 80px 3px;
 }
@@ -136,8 +149,6 @@
 .mainPhoto div h4 {
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-
 
 .mainPhoto img {
   width: 100%;
@@ -165,6 +176,13 @@
   width: 1.2rem;
 }
 
+.divBottomMonitor {
+  width: 100%;
+  height: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(124, 124, 124, 0.5);
+}
+
 .hotContent {
   width: 100%;
   cursor: pointer;
@@ -183,7 +201,6 @@
 .hotContent:last-child::after {
   height: 0px;
 }
-
 
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -208,7 +225,6 @@
   max-width: 300px;
 }
 
-
 .contentAside img {
   max-width: 250px;
 }
@@ -226,13 +242,9 @@
   gap: 0.5rem;
 }
 
-
-
 .contentThumb > div > div > p {
   font-size: 0.85rem;
 }
-
-
 
 .contentThumb div img {
   width: 100px;
