@@ -17,7 +17,6 @@
   max-width: calc(100% - 32px);
 }
 
-
 .maxHeight {
   max-height: 80px;
 }
@@ -31,7 +30,7 @@
   gap: 1rem;
 }
 .spacing p {
- /* font-size: 0.9rem;*/
+  /* font-size: 0.9rem;*/
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   padding: 0.2rem 1rem;
@@ -47,11 +46,10 @@
   height: 300px;
   width: 100%;
   object-fit: cover;
-  
+
   -webkit-animation: zoom 20s;
   animation: zoom 20s;
-  animation-delay: .5s;
-
+  animation-delay: 0.5s;
 }
 
 .max-content {
@@ -105,8 +103,7 @@
 }
 
 .navSpacingLittle {
-  height: 90%;
-  gap: 1rem;
+  gap: 0.5rem;
 }
 
 .navSpacing p {
@@ -208,20 +205,18 @@
   transform: scale(1.1);
 }
 
-
-
 .input {
   border-radius: 0.25rem;
 }
 
-.bottomImg{
+.bottomImg {
   position: absolute;
   z-index: 1;
   bottom: 0;
   left: 0;
   right: 0;
   height: 37px;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   box-sizing: border-box;
