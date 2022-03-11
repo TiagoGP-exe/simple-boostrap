@@ -17,10 +17,6 @@
   max-width: calc(100% - 32px);
 }
 
-.fireIcon {
-  width: 2rem;
-  height: 2rem;
-}
 
 .maxHeight {
   max-height: 80px;
@@ -35,12 +31,11 @@
   gap: 1rem;
 }
 .spacing p {
-  font-size: 0.9rem;
+ /* font-size: 0.9rem;*/
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   padding: 0.2rem 1rem;
 }
-
 
 .HighlightTrue {
   opacity: 1;
@@ -48,8 +43,23 @@
   background-position: 0% 0%;
 }
 
+.topImg {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+  animation-delay: .5s;
+
+}
+
 .max-content {
   max-width: 1280px;
+}
+
+.max-lg-content {
+  max-width: 1024px;
 }
 
 .calendarContent {
@@ -76,6 +86,15 @@
   opacity: 1;
 }
 
+.hover-shadow {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.hover-shadow:hover {
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);
+}
+
 .bgGreen {
   background-color: #007004;
 }
@@ -92,23 +111,20 @@
 
 .navSpacing p {
   height: 90%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   padding: 1rem;
- 
- 
-  
 }
 
 .navSpacing p:hover {
   background-size: 100% 100%;
-  color: #DC3545;
+  color: #dc3545;
 }
 
 .mainPhoto {
   width: 90%;
-  background-color: #DC3545;
+  background-color: #dc3545;
   position: relative;
   clip-path: polygon(0% 0, 100% 0, 100% 100%, 0% 100%);
   border-radius: 1rem;
@@ -127,8 +143,6 @@
   background: linear-gradient(180deg, transparent 0%, #000 100%);
 }
 
-
-
 .mainPhoto:hover div h3 {
   background-size: 80px 3px;
 }
@@ -136,8 +150,6 @@
 .mainPhoto div h4 {
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
-
 
 .mainPhoto img {
   width: 100%;
@@ -165,77 +177,52 @@
   width: 1.2rem;
 }
 
-.hotContent {
+.divBottomMonitor {
   width: 100%;
-  cursor: pointer;
-  margin-top: 1rem !important;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 20px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px rgba(124, 124, 124, 0.5);
 }
 
-.hotContent::after {
-  content: " ";
-  width: 100%;
-  height: 1px;
-  margin-top: 1rem !important;
-  background-color: rgba(107, 107, 107, 0.377);
+.bodyIcon {
+  position: fixed;
+  right: 15px;
+  top: 46vh;
+  width: 64px;
+  height: 64px;
+  padding: 4px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.hotContent:last-child::after {
-  height: 0px;
+.handIcon {
+  position: fixed;
+  right: 0;
+  top: 28vh;
+  width: 36px;
+  height: 36px;
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-
-::-webkit-scrollbar {
-  width: 0.5rem;
-}
-
-::-webkit-scrollbar-track {
-  opacity: 0;
-  background-color: rgb(228, 228, 228);
-}
-
-::-webkit-scrollbar-thumb {
-  opacity: 0;
-  background-color: #bdc3c7;
-  border-radius: 1rem;
-}
-
-.contentBottom {
-  width: 93%;
-}
-
-.contentAside {
-  max-width: 300px;
-}
-
-
-.contentAside img {
-  max-width: 250px;
-}
-
-.contentThumb {
-  max-width: 90%;
-}
-
-.contentThumb > div {
-  cursor: pointer;
-  width: 100%;
-}
-
-.contentThumb > div > div {
-  gap: 0.5rem;
+.bodyIcon:hover,
+.handIcon:hover {
+  transform: scale(1.1);
 }
 
 
 
-.contentThumb > div > div > p {
-  font-size: 0.85rem;
-}
-
-
-
-.contentThumb div img {
-  width: 100px;
-  height: 100px;
+.input {
   border-radius: 0.25rem;
+}
+
+.bottomImg{
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 37px;
+  background-color: rgba(0,0,0,.5);
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
 }
