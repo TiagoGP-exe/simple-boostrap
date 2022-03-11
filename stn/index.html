@@ -14,10 +14,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="stn/styles.css" />
-  <link rel="icon" href="stn/assets/favicon.svg" type="image/x-svg" />
-  <div class="d-flex bgGreen text-white justify-content w-100">
-    <div class="d-flex justify-content-between align-content w-100 ">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/x-svg" />
+
+
+</head>
+
+<body>
+  <div class="d-flex bgGreen text-white justify-content-center justify-content w-100">
+    <div class="d-flex justify-content-between align-content w-100 max-content py-2">
       <div class="d-flex navSpacingLittle">
         <p>Fale Conosco</p>
         |
@@ -42,27 +47,26 @@
     <img src="stn/assets/morro.jpg" alt="morro">
   </div>
 
-</head>
+    <img class="topImg" src="assets/morro.jpg" alt="morro">
 
-<body>
+
+
+  </div>
   <div class="d-flex flex-column align-items-center">
-    <header class="d-flex justify-content-center align-items-center my-3 w-100">
-      <div class="d-flex justify-content-between align-items-center w-100 max-content">
-        <img src="stn/assets/logo-tce.png" alt="Logo" class=" hover-shadow"
-          style="box-shadow: 1px 1px 5px rgb(0 0 0 / 50%);" />
-        <img src="stn/assets/logo-camara.jpg" alt="Logo" class="maxHeight  hover-shadow" />
-        <img src="stn/assets/logo-transparencia.png" alt="Logo" class="maxHeight  hover-shadow" />
+    <header class="d-flex justify-content-center my-3 w-100">
+      <div class="d-flex justify-content-center align-items-center flex-column w-100 max-content ali">
+        <div class="d-flex w-100 justify-content-between">
+          <img src="assets/logo-tce.png" alt="Logo" class="hover-shadow" />
+          <img src="assets/logo-camara.jpg" alt="Logo" class="maxHeight hover-shadow" />
+          <img src="assets/logo-transparencia.png" alt="Logo" class="maxHeight hover-shadow" />
+        </div>
 
-        <div class="d-flex justify-content-between w-75">
-          <div class="d-flex gray justify-content-between align-content-center w-100">
-
-            <p class="calendarDate"></p>
-
-          </div>
+        <p class="calendarDate"></p>
     </header>
 
-    <div class="d-flex bgGreen text-white justify-content-center w-100">
+    <div class="d-flex bgGreen text-white justify-content-center w-100 ">
       <div class="d-flex justify-content-between align-content-center w-100 max-content">
+        <div></div>
         <div class="d-flex navSpacing">
           <p>Pagina Inicial</p>
 
@@ -78,17 +82,27 @@
 
           <p>Fale Conosco</p>
         </div>
-        <div class="d-flex searchContent align-items-center">
-          <img src="stn/assets/lupa.svg" alt="Pesquisa" />
+        <div class="d-flex searchContent align-items-center align-items-center">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Busca no site" aria-label="Busca no site"
+              aria-describedby="basic-addon2">
+            <div class="bg-success searchContent ">
+              <img src="assets/lupa.svg" alt="Pesquisa" class="justify-content-center" />
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
+    <div class="max-content col-12">
+      <div class="max-content col-12 row mt-2">
+        <p class="col-2 py-2  bg-danger text-white">ULTIMAS NÓTICIAS</p>
+        <p class="col py-2 "> OS VEREADORES ROMINHO (PV) E EDGARD GONÇALVES (PSC) PEDEM POÇO ARTESIANO</p>
+        <p class="col-2 py-2 ">VEREADORES PEDEM RE</p>
+      </div>
 
-    <main
-      class="d-flex flex-column max-content flex-xl-row justify-content-center align-items-center align-items-xl-start mt-5 pt-5 max">
-      <div class="d-flex flex-column justify-content-center align-items-center">
-        <div class="mainPhoto">
-          <div>
+      <img src="assets/body.svg" class="bodyIcon bg-success rounded-circle" alt="">
+      <img src="assets/component-ac.png" class="handIcon" alt="">
 
             <h4>
               Legislativo e Executivo convidam a população para o Evento do Outubro Rosa
@@ -97,14 +111,40 @@
           <img src="stn/assets/outubro-rosa.jpg" alt="camara Cuiabá" />
         </div>
 
+      <div class="container-fluid mt-5">
+        <div class="row col-12 ">
+          <div class="col-lg-9">
+            <div class="mainPhoto">
+              <div>
 
-        <div class=" col-3">
-          <header class="d-flex align-items-center bgGreen hotHeader text-white">
-            <p class="d-flex h-100 align-items-md-center"></p>
-          </header>
+                <h4>
+                  Após aprovar auxílio-transporte, Câmara de Cuiabá prorroga
+                  contrato de fornecimento de combustível
+                </h4>
+              </div>
+              <img src="assets/outubro-rosa.jpg" alt="camara Cuiabá" />
 
+            </div>
+          </div>
+          <div class="col-3 position-relative">
+            <button type="button" class=" mb-4 w-100 btn btn-lg btn-outline-secondary">TV Câmara</button>
+            <div class="position-relative">
+              <img class="position-absolute w-100" src="assets/tv-camara.png" alt="tv-camara.png">
+              <iframe width="260" height="150" src="https://www.youtube.com/embed/aQCnF1yY7Uc"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <div class="mt-5">
+              <h4>Canal de Leis</h4>
+              <div class="divBottomMonitor " />
+            </div>
+          </div>
+        </div>
+      </div>
 
-    </main>
+    </div>
+
   </div>
 
   <script>
@@ -114,6 +154,7 @@
       year: "numeric",
       month: "long",
       day: "numeric",
+
     };
     const correctDate = new Intl.DateTimeFormat("pt-BR", options).format(
       date
@@ -121,7 +162,7 @@
 
     const calendar = document.querySelector(".calendarDate");
 
-    calendar.innerHTML = correctDate;
+    calendar.innerHTML = `Santo Antônio do Leverger (MT) ${correctDate}`;
   </script>
 </body>
 
